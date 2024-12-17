@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Services</title>
+        <style>
+            .formbox
+            {
+            border-radius: 10px;
+            height: 37px;
+            width: 230px;
+            background-color: rgba(235, 245, 233,0.6);
+            }
+
+            .buttonhead
+            {
+                height: 40px;
+                width: 75px;
+                background-color: rgba(255, 255, 255, 1);
+                
+            }
+        </style>
+    </head>
+    <body background="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L3Jhd3BpeGVsX29mZmljZV8zM193YWxscGFwZXJfcGF0dGVybl9vZl9wYXN0ZWxfY29sb3JlZF9wZW5jaWxfdF9kNzIzNTM5YS1iMDJiLTQ0ZmItYjA5Zi1mNzQwNjMxYjM1NTNfMS5qcGc.jpg">
+        <a href="http://127.0.0.1:8000/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAYFBMVEX///8AAAAeHh5mZmaGhoZdXV1ra2usrKzv7+8uLi7l5eX6+vr19fWLi4uhoaHY2Nh3d3ezs7NwcHDCwsJKSkrPz883NzcWFhbIyMiWlpZPT09FRUUPDw99fX0nJyff398Gb6dvAAACdklEQVRoge2Z3ZaCIBSFpTL8oSwrs5ry/d9y6mDJgYMQuuZiFvvKTvCpbNlCJUlUVNSfqeCbDS/0assHHULRZc1AdYnKW6ZqFcbuFm/AolPrKYKfg9itimit8EUIG988284JvzNN99ng5VFnM3Z92zoRPlip6lHMAW8p9Eun6fCtBf0UnwrHVl4u6ON9ElxgK/dJskeFp63B8AJbWb1qFSo9xDIQfkD9mkxWswbRmjA4tnI5fIEvNgi+Q702UOPwgCSbiXDTSgmVJ9lb2H7w4oH6KPMlhcPTBLhmpVDPJ+e9aAi0FxxbmUJGKSkAcV6mjJAbTlqpluy2uuAlZaUW6DLOCVsd8I6YleKqQ65gQ6WXHXBqVhZn8xLPYGum2zoK16wkzveRXKNoto7BKSutgS7f0thW+9KixEMrraxt7OfyCBoYIUyq+0HNKnJQkaQl2Nazsd4zh7bvR1iJSNQVtCabClhrPg2SY4dDeKuzKSvtyepoukNoQVhZjrwTVC1LwlahWIlnJQRslvuxGcvBHhzCj4+trbOtQ9TVtKSVcJcoBN3ixDiCrTjw5NZg9R2b7nbXHxOwUhCrWpeOwrR1l6CPMHiFt5Wq8sK0Sr0VOSutq1qXWn22Psfq9j6WAXuh+vnpAoBPCN9eI9znlZxqIyHoVq3O1h9woYNjeJqy20hXD92y4TnuN5SvPJTLniArVeXJ29bPZrrifRaQu59v1L/mMl7pyTgfnFSER/gM8LxeK6qtky0Ivsbt1rPCl7iddWEQ4REe4REe4f8fbt2M+8KbEbj1FwpfuLF59umV4mbkj2fmNeg6rEhx3IrTrYL/g4qKiqL1C2NlIiwY41ozAAAAAElFTkSuQmCC" style="width:20px; height:20px;"></a>
+        <center>
+        <pre>
+
+
+
+            
+
+        </pre>
+        <h1>Registration of Sevices</h1>
+        <p><font size="5"> Create your account </font></p>
+        <br>
+        <br>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% for msg in message %}
+                    <h4 style="color:red">{{msg}}</h4>
+                    {% endfor %}
+            <input type="text" class="formbox" value="" name="sname" placeholder="Name">
+            <br>
+            <br>        
+            <input type="text" class="formbox" value="" name="semail" placeholder="email">
+            <br>
+            <br>
+            <input type="text" class="formbox" value="" name="Password" placeholder="Password">
+            <br>
+            <br>
+            <input type="text" class="formbox" value="" name="C_password" placeholder="Confirm password">
+            <br>
+            <br>
+            <input type="file" class="formbox" value="" name="sImage" placeholder="Image">
+            <br>
+            <br>
+            <input type="text" class="formbox" value="" name="sloc" placeholder="Location">
+            <br>
+            <br>
+            <input type="text" class="formbox" value="" name="saddress" placeholder="Address">
+            <br>
+            <br>
+            <input type="text" class="formbox" value="" name="sPh" placeholder="Phone.no">
+            <br>
+            <br>
+            <input type="text" class="formbox" value="" name="syear" placeholder="Year">
+            <br>
+            <br>
+            <input type="submit" class="buttonhead" value="submit">
+        </form>
+        </center>
+    </body>
+</html>
