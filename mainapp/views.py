@@ -80,12 +80,15 @@ def searchs(request):
 
 def addrec(request):
     if request.method=="POST":
-         e = request.POST.get('email', '')
+         i = request.session['id']
+         e = request.session["Email"]
          iem = request.POST.get('item', '')
          data = request.POST.get('desc', '')
+         if not id or not e or not iem or not data:
+             return redirect('search')
          dat = Buy(e,iem,data)
          dat.save()
-
+    return redirect(request, 'addrec.html')
 
 
 def recommend(request):
