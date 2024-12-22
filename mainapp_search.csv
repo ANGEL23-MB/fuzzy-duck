@@ -1,0 +1,30 @@
+id,Item,Price,Description
+1,Chair,49.99,Comfortable office chair
+2,Table,89.99,Wooden dining table
+3,Lamp,29.99,LED desk lamp
+4,Laptop,999.99,15-inch laptop with 16GB RAM
+5,Smartphone,499.99,Latest model smartphone
+6,Notebook,2.99,Spiral-bound notebook
+7,Pen,1.49,Blue ink ballpoint pen
+8,Backpack,39.99,Durable travel backpack
+9,Headphones,59.99,Noise-cancelling over-ear headphones
+10,Monitor,199.99,24-inch full HD monitor
+11,Mouse,25.99,Wireless ergonomic mouse
+12,Keyboard,49.99,Mechanical gaming keyboard
+13,Desk,199.99,Adjustable standing desk
+14,Router,79.99,High-speed Wi-Fi router
+15,Printer,129.99,All-in-one color printer
+16,Scanner,89.99,Portable document scanner
+17,Webcam,69.99,HD USB webcam
+18,Microphone,79.99,USB condenser microphone
+19,Speaker,99.99,Bluetooth portable speaker
+20,Smartwatch,199.99,Fitness tracking smartwatch
+21,Tablet,399.99,10-inch Android tablet
+22,External Hard Drive,89.99,1TB portable hard drive
+23,USB Flash Drive,19.99,64GB USB 3.0 flash drive
+24,Smart TV,499.99,55-inch 4K Smart TV
+25,Game Console,299.99,Latest generation gaming console
+26,Gaming Chair,199.99,Ergonomic gaming chair
+27,VR Headset,399.99,Virtual reality headset
+28,Action Camera,299.99,4K waterproof action camera
+29,Drone,499.99,Quadcopter with HD camera
